@@ -1,6 +1,5 @@
 package es.vcarmen.amacias.fragment010;
 
-import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -30,10 +29,10 @@ public class Fragment1 extends ListFragment {
             @Override
             public void onEntrada(Object entrada, View view) {
 
-                TextView textoSuperiorEntrada = (TextView) view.findViewById(R.id.texto_titulo);
+                TextView textoSuperiorEntrada = (TextView) view.findViewById(R.id.texto_titulo_listado);
                 textoSuperiorEntrada.setText(((Content.ListaEntrada)entrada).textoEncima);
 
-                ImageView imagenEntrada = (ImageView) view.findViewById(R.id.imagen_lista);
+                ImageView imagenEntrada = (ImageView) view.findViewById(R.id.imagen_listado);
                 imagenEntrada.setImageResource(((Content.ListaEntrada)entrada).idImagen);
 
             }
